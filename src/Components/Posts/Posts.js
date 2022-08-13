@@ -4,9 +4,12 @@ import Heart from '../../assets/Heart';
 import { FirebaseContext } from '../../Storage/Context';
 import './Post.css';
 
+import {PostContext} from '../../Storage/PostContext' 
+import { useHistory } from 'react-router-dom';
 function Posts() {
  const {firebase} = useContext(FirebaseContext)
  const [products, setProducts] = useState([])
+ const history = useHistory()
 useEffect(() => {
   firebase.firestore().collection('products').get().then((snapshot)=>{
     const allPost = snapshot.docs.map((products)=>{
@@ -19,7 +22,8 @@ useEffect(() => {
     setProducts(allPost)
   })
 }, [])
-
+ 
+const {setPost} = useContext(PostContext)
   return (
     <div className="postParentDiv">
       <div className="moreView">
@@ -31,16 +35,14 @@ useEffect(() => {
           console.log(products,"products")
         }
      
-     <div className="cards">
-     { products?.map(product=>{   return(<div
+     <div className="cards" >
+     { products?.map((product,index)=>{   return(<div key={index}
             className="card"
+            onClick={()=>{setPost(product); history.push("/view")}}
           >
             <div className="favorite">
               <Heart></Heart>
             </div>
-            {
-              console.log(product.url,"url")
-            }
             <div className="image">
               <img src={product.url} alt="" />
             </div>
