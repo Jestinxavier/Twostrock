@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Jestinxavier/Twostrock/static/css/main.9c00a793.chunk.css",
+    "main.js": "/Jestinxavier/Twostrock/static/js/main.161da111.chunk.js",
+    "main.js.map": "/Jestinxavier/Twostrock/static/js/main.161da111.chunk.js.map",
+    "runtime-main.js": "/Jestinxavier/Twostrock/static/js/runtime-main.cc946f17.js",
+    "runtime-main.js.map": "/Jestinxavier/Twostrock/static/js/runtime-main.cc946f17.js.map",
+    "static/js/2.0a62da23.chunk.js": "/Jestinxavier/Twostrock/static/js/2.0a62da23.chunk.js",
+    "static/js/2.0a62da23.chunk.js.map": "/Jestinxavier/Twostrock/static/js/2.0a62da23.chunk.js.map",
+    "index.html": "/Jestinxavier/Twostrock/index.html",
+    "static/css/main.9c00a793.chunk.css.map": "/Jestinxavier/Twostrock/static/css/main.9c00a793.chunk.css.map",
+    "static/js/2.0a62da23.chunk.js.LICENSE.txt": "/Jestinxavier/Twostrock/static/js/2.0a62da23.chunk.js.LICENSE.txt",
+    "static/media/olx-logo.b3f099a2.png": "/Jestinxavier/Twostrock/static/media/olx-logo.b3f099a2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc946f17.js",
+    "static/js/2.0a62da23.chunk.js",
+    "static/css/main.9c00a793.chunk.css",
+    "static/js/main.161da111.chunk.js"
+  ]
+}
